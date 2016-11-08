@@ -204,8 +204,7 @@ public class DatabaseDao {
         close();
     }
 
-
-    /*
+    /**
     * 关闭连接
     */
     private static void close() {

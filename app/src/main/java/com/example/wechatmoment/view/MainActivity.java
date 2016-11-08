@@ -156,8 +156,6 @@ public class MainActivity extends BaseActivity {
 
             @Override
             public void endPost() {
-
-
                 getDBmoments(page, count);
             }
 

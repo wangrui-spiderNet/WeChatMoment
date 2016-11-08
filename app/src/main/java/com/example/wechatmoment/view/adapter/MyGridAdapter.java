@@ -58,10 +58,6 @@ public class MyGridAdapter extends BaseAdapter {
 
 		ImageLoader.getInstance().displayImage(url, viewHolder.iv_album_image);
 
-//		if(!StringUtil.isEmpty(url)){
-//			Picasso.with(context).load(url).into(viewHolder.iv_album_image);
-//		}
-
 		return convertView;
 	}
 
