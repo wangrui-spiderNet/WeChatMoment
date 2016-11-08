@@ -10,6 +10,9 @@ import com.example.wechatmoment.R;
 import com.example.wechatmoment.net.core.AppAction;
 import com.example.wechatmoment.net.core.AppActionImpl;
 import com.example.wechatmoment.util.StringUtil;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 /**
  * Created by wangrui on 2016/11/8.
@@ -34,6 +37,18 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
         screenWidth = dm.widthPixels;
         screenHeight = dm.heightPixels;
         appAction = AppActionImpl.getInstance(this);
+
+        DisplayImageOptions defaultOptions = new DisplayImageOptions.Builder()
+                .showImageForEmptyUri(R.drawable.agent_default)
+                .showImageOnFail(R.drawable.bid_tip_bg).cacheInMemory(true).cacheOnDisc(true)
+                .build();
+
+        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+                getApplicationContext()).defaultDisplayImageOptions(defaultOptions)
+                .discCacheSize(50 * 1024 * 1024)
+                .discCacheFileCount(100)
+                .writeDebugLogs().build();
+        ImageLoader.getInstance().init(config);
     }
 
     @Override
