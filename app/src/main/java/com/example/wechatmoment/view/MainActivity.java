@@ -142,16 +142,6 @@ public class MainActivity extends BaseActivity {
             ImageLoader.getInstance().displayImage(userInfo.getProfile_image(), ivHeadImg);
             ImageLoader.getInstance().displayImage(userInfo.getAvatar(), ivHeadBg);
 
-//            if(!StringUtil.isEmpty(userInfo.getProfile_image())){
-//
-//                Picasso.with(MainActivity.this).load(userInfo.getProfile_image()).into(ivHeadImg);
-//            }
-//
-//            if(!StringUtil.isEmpty(userInfo.getAvatar())){
-//
-//                Picasso.with(MainActivity.this).load(userInfo.getAvatar()).into(ivHeadBg);
-//            }
-
             tvName.setText(userInfo.getNick());
         }
 
