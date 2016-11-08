@@ -64,8 +64,6 @@ public class MainActivity extends BaseActivity {
         xListView.setPullLoadEnable(true);
         xListView.setPullRefreshEnable(true);
 
-
-
         xListView.setXListViewListener(new XListView.IXListViewListener() {
             @Override
             public void onRefresh() {
@@ -132,6 +130,7 @@ public class MainActivity extends BaseActivity {
 
                     ImageLoader.getInstance().displayImage(userInfo.getProfile_image(), ivHeadImg);
                     ImageLoader.getInstance().displayImage(userInfo.getAvatar(), ivHeadBg);
+
                     tvName.setText(userInfo.getNick());
 
                     DatabaseDao.getInstance(getApplicationContext()).saveUserInfo(userInfo);
@@ -151,6 +150,17 @@ public class MainActivity extends BaseActivity {
         } else {
             ImageLoader.getInstance().displayImage(userInfo.getProfile_image(), ivHeadImg);
             ImageLoader.getInstance().displayImage(userInfo.getAvatar(), ivHeadBg);
+
+//            if(!StringUtil.isEmpty(userInfo.getProfile_image())){
+//
+//                Picasso.with(MainActivity.this).load(userInfo.getProfile_image()).into(ivHeadImg);
+//            }
+//
+//            if(!StringUtil.isEmpty(userInfo.getAvatar())){
+//
+//                Picasso.with(MainActivity.this).load(userInfo.getAvatar()).into(ivHeadBg);
+//            }
+
             tvName.setText(userInfo.getNick());
         }
 

@@ -4,8 +4,10 @@ import android.content.Context;
 import android.graphics.Color;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.TextPaint;
 import android.text.style.CharacterStyle;
 import android.text.style.ForegroundColorSpan;
+import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -20,7 +22,7 @@ import java.util.regex.Pattern;
 
 /**
 * Created by wangrui on 2016/11/8.
-        */
+*/
 public class StringUtil {
 
     /**
@@ -469,6 +471,19 @@ public class StringUtil {
         }
 
         return spannable;
+    }
+
+    /**
+     * calculate length of view
+     * @param textView
+     * @param text
+     * @return
+     */
+    public static int getTextViewLength(TextView textView, String text) {
+        TextPaint paint = textView.getPaint();
+        // 得到使用该paint写上text的时候,像素为多少
+        int textLength = (int) paint.measureText(text);
+        return textLength;
     }
 
 }

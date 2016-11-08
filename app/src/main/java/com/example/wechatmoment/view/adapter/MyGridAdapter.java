@@ -19,10 +19,12 @@ public class MyGridAdapter extends BaseAdapter {
 	private List<WechatMoment.ImagesEntity> files;
 
 	private LayoutInflater mLayoutInflater;
+	private Context context;
 
 	public MyGridAdapter(List<WechatMoment.ImagesEntity> files, Context context) {
 		this.files = files;
 		mLayoutInflater = LayoutInflater.from(context);
+		this.context=context;
 	}
 
 	@Override
@@ -55,6 +57,10 @@ public class MyGridAdapter extends BaseAdapter {
 		String url = getItem(position);
 
 		ImageLoader.getInstance().displayImage(url, viewHolder.iv_album_image);
+
+//		if(!StringUtil.isEmpty(url)){
+//			Picasso.with(context).load(url).into(viewHolder.iv_album_image);
+//		}
 
 		return convertView;
 	}

@@ -10,10 +10,6 @@ import java.util.Map;
  */
 public class JNApiImpl implements JNApi {
 
-    private final static String APP_KEY = "ANDROID_KCOUPON";
-    private final static String TIME_OUT_EVENT = "CONNECT_TIME_OUT";
-    private final static String TIME_OUT_EVENT_MSG = "连接服务器失败";
-
     private HttpEngine httpEngine;
 
     public JNApiImpl() {

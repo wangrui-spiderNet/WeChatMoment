@@ -8,6 +8,7 @@
     <drawable name="chatdivider">#ffd6dadc</drawable>
     <drawable name="window_bg">#fff7f9fa</drawable>
 
+    <color name="gray_bg">#F8F8F8</color>
     <color name="gray_01new">#5b5b5b</color>
     <color name="red_renzheng">#ef4646</color>
     <color name="tabbg">#7f0a4267</color>
@@ -131,7 +132,8 @@
    <color name="viewfinder_laser">#ff04fd21</color>
    <color name="viewfinder_mask_line">#ff06ccfe</color>
    <color name="viewfinder_mask_corner">#ff068cfe</color>
-   <color name="possible_result_points">#c0ffbd21</color>
+   <color name="possible_result_points">#c0ffbd21</color>
+
     -->
 
 </resources>

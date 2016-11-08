@@ -16,9 +16,6 @@ import com.example.wechatmoment.util.StringUtil;
  */
 public class AppActionImpl implements AppAction {
 
-    private final static int LOGIN_OS = 1; // 表示Android
-    private final static int PAGE_SIZE = 20; // 默认每页20条
-
     private Context context;
     private JNApi api;
     private int errorCode = 123;

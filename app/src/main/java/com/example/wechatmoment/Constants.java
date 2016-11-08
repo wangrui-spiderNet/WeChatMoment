@@ -7,9 +7,6 @@ public class Constants {
     public static final String APP_TAG="weichat_moment";
     public static final int DATABASE_VERSION=1;
 
-    public static final String firstfolder="demo";
-    public static final String secondfolder="cache";
-
     public static class ErrorCode {
         public static final int ERROR_API_OK = 1;
         public static final int ERROR_API_NO_HAVE_USER_INFO = -2;

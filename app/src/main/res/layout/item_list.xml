@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:padding="6dp">
+
+    <ImageView
+        android:id="@+id/iv_avator"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/agent_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_avator"
+        android:textColor="@color/blue123"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_avator"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_showorhide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ll_content"
+        android:layout_below="@+id/ll_content"
+        android:text="全文"
+        android:textColor="@color/blue123"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+    <com.example.wechatmoment.view.widget.MyGridView
+        android:id="@+id/gv_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_showorhide"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iv_avator"
+        android:columnWidth="90dp"
+        android:gravity="left"
+        android:horizontalSpacing="5dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:stretchMode="none"
+        android:verticalSpacing="5dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/comment_reply_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_below="@+id/gv_gridView"
+        >
+
+        <com.example.wechatmoment.view.widget.MyListView
+            android:id="@+id/comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_bg"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:padding="5dp" />
+    </FrameLayout>
+</RelativeLayout>
+
