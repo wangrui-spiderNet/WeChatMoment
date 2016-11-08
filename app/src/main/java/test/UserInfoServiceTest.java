@@ -4,7 +4,7 @@ import android.test.AndroidTestCase;
 import com.example.wechatmoment.entity.UserInfo;
 
 /**
- * Created by 94540 on 2015/11/24.
+ * Created by wangrui on 2016/11/8.
  */
 public class UserInfoServiceTest extends AndroidTestCase {
 

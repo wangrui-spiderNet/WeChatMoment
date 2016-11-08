@@ -12,7 +12,9 @@ import com.example.wechatmoment.entity.WechatMoment;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.List;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class MyGridAdapter extends BaseAdapter {
 	private List<WechatMoment.ImagesEntity> files;
 

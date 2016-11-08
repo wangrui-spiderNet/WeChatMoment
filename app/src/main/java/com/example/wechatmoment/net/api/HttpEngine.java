@@ -19,11 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Http引擎处理类
- *
- * @author wangrui
- * @date 15/11/22
- * @version 1.0
+* Created by wangrui on 2016/11/8.
  */
 public class HttpEngine {
     private final static String ENCODE_TYPE = "UTF-8";

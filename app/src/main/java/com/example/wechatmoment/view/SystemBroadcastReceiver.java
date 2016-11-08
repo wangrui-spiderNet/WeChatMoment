@@ -5,7 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.example.wechatmoment.Constants;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class SystemBroadcastReceiver extends BroadcastReceiver {
 
 	@Override

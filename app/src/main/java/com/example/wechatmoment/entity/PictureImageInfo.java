@@ -3,7 +3,9 @@ package com.example.wechatmoment.entity;
 import android.net.Uri;
 
 import java.io.Serializable;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class PictureImageInfo implements Serializable{
 
 	/**

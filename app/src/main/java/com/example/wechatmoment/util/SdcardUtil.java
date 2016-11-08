@@ -17,7 +17,9 @@ import java.io.IOException;
 import java.nio.channels.FileChannel;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class SdcardUtil {
 
     /**

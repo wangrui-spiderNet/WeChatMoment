@@ -4,8 +4,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by 94540 on 2015/11/21.
- */
+* Created by wangrui on 2016/11/8.
+        */
 public class WechatMoment {
 
     /**

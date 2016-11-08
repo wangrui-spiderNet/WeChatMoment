@@ -12,10 +12,7 @@ import com.example.wechatmoment.net.api.JNApiImpl;
 import com.example.wechatmoment.util.StringUtil;
 
 /**
- * AppAction接口的实现类
- *
- * @version 1.0
- * @date 15/10/25
+ * Created by wangrui on 2016/11/8.
  */
 public class AppActionImpl implements AppAction {
 

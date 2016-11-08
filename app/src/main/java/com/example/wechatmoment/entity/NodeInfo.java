@@ -3,10 +3,7 @@ package com.example.wechatmoment.entity;
 import java.io.Serializable;
 
 /**
- * 监理节点验收接口的实体类
- * 
- * @author soufun
- * 
+ * Created by wangrui on 2016/11/8.
  */
 public class NodeInfo implements Serializable {
 	private static final long serialVersionUID = 1L;

@@ -20,7 +20,9 @@ import android.widget.TextView;
 
 import com.example.wechatmoment.R;
 
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class XListViewHeader extends LinearLayout {
 	private LinearLayout mContainer;
 	private ImageView mArrowImageView;

@@ -1,7 +1,7 @@
 package com.example.wechatmoment;
 
 /**
- * Created by 94540 on 2015/11/22.
+ * Created by wangrui on 2016/11/8.
  */
 public class Constants {
     public static final String APP_TAG="weichat_moment";

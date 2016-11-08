@@ -1,7 +1,9 @@
 package com.example.wechatmoment.entity;
 
 import java.util.ArrayList;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class MyMessage {
 
 	public int code;

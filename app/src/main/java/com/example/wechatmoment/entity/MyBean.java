@@ -1,6 +1,8 @@
 package com.example.wechatmoment.entity;
 
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class MyBean {
 
 	public int id;

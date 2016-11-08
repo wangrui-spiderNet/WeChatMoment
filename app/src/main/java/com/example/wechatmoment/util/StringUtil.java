@@ -19,11 +19,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 字符串处理类
- *
- * @author 程祝�?
- * @time 整理时间�?012-8-13 上午11:39:38
- */
+* Created by wangrui on 2016/11/8.
+        */
 public class StringUtil {
 
     /**

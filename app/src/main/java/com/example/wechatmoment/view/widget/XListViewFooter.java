@@ -15,7 +15,9 @@ import android.widget.TextView;
 
 import com.example.wechatmoment.R;
 
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class XListViewFooter extends LinearLayout {
 	public final static int STATE_NORMAL = 0;
 	public final static int STATE_READY = 1;

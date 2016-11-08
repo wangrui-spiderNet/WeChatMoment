@@ -4,11 +4,7 @@ package com.example.wechatmoment.net.core;
 import com.example.wechatmoment.net.PostRequestCallBack;
 
 /**
- * 接收app层的各种Action
- *
- * @author Keegan小钢
- * @version 1.0
- * @date 15/6/25
+ * Created by wangrui on 2016/11/8.
  */
 public interface AppAction {
     /**

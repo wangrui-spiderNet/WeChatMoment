@@ -9,7 +9,7 @@ import com.example.wechatmoment.entity.DbMoment;
 import java.util.List;
 
 /**
- * Created by 94540 on 2015/11/24.
+ * Created by wangrui on 2016/11/8.
  */
 public class WeChatMomentService extends AndroidTestCase{
 

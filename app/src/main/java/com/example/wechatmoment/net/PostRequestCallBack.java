@@ -1,5 +1,7 @@
 package com.example.wechatmoment.net;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public interface PostRequestCallBack {
 	public void startPost();
 	public void endPost();

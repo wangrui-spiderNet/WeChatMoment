@@ -21,7 +21,9 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class MyListAdapter extends BaseAdapter {
 
     private List<WechatMoment> wechats;

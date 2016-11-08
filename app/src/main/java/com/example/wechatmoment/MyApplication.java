@@ -5,7 +5,9 @@ import android.app.Application;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class MyApplication extends Application {
 
 	private static MyApplication instanse;

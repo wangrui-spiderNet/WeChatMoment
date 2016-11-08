@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by jn-wr on 2015/8/22.
+ * Created by wangrui on 2016/11/8.
  */
 public class DatabaseDao {
 

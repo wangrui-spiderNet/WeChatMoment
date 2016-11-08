@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by jn-wr on 2015/10/10.
+ * Created by wangrui on 2016/11/8.
  */
 public class JNApiImpl implements JNApi {
 

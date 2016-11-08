@@ -1,17 +1,15 @@
 package com.example.wechatmoment.view;
 /**
- * created by wangrui 2015/11/21
+ * Created by wangrui on 2016/11/8.
  */
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.wechatmoment.Constants;
 import com.example.wechatmoment.R;
 import com.example.wechatmoment.db.DatabaseDao;
 import com.example.wechatmoment.entity.DbMoment;

@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.wechatmoment.Constants;
 
 /**
- * Created by jn-wr on 2015/8/22.
+ * Created by wangrui on 2016/11/8.
  */
 public class SQliteOpenHelper extends SQLiteOpenHelper {
 

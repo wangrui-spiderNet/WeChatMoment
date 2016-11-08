@@ -24,7 +24,9 @@ import android.widget.TextView;
 
 import com.example.wechatmoment.R;
 
-
+/**
+ * Created by wangrui on 2016/11/8.
+ */
 public class XListView extends ListView implements OnScrollListener {
 
 	private float mLastY = -1; // save event y
