@@ -2,6 +2,7 @@ package com.example.wechatmoment.view;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.util.DisplayMetrics;
 import android.view.View;
 
 import com.example.wechatmoment.Constants;
@@ -16,6 +17,8 @@ import com.example.wechatmoment.util.StringUtil;
 public class BaseActivity extends FragmentActivity implements View.OnClickListener{
 
     public AppAction appAction;
+    public static int screenWidth;
+    public static int screenHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,11 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
             Constants.SERVER_HOST_ADDRESS = getResources().getString(R.string.server_host);
         }
 
+        DisplayMetrics dm = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+        screenWidth = dm.widthPixels;
+        screenHeight = dm.heightPixels;
         appAction = AppActionImpl.getInstance(this);
     }
 

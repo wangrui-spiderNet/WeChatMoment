@@ -4,7 +4,6 @@ package com.example.wechatmoment.view;
  */
 
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
@@ -30,15 +29,12 @@ import java.util.List;
 public class MainActivity extends BaseActivity {
 
     private XListView xListView;
-
     private View headView;
     private ImageView ivHeadBg;
     private ImageView ivHeadImg;
     private TextView tvName;
 
     private MyListAdapter mAdapter;
-    public static int screenWidth;
-    public static int screenHeight;
 
     private UserInfo userInfo;
     private ArrayList<WechatMoment> wechats;
@@ -51,11 +47,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_photo);
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-
-        screenWidth = dm.widthPixels;
-        screenHeight = dm.heightPixels;
 
         wechats = new ArrayList<WechatMoment>();
 
